@@ -1,0 +1,25 @@
+html{
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    border-style: solid;
+    padding: 20px;
+
+}
+
+section{
+    border-style: solid;
+    flex: 1 1 250px;
+    border-radius: 5px;
+    background-color: #87d3e2;
+    padding: 10px;
+    font-weight: bold
+}
