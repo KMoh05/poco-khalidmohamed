@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Form</h1>
+      <h2>Fill out the form</h2>
+      <form action="index.html" method="post">
+        <fieldset>
+          <legend>Personal Data</legend>
+          <label for="Title">Title</label>
+          <input type="text" name="Title" placeholder="optional"/>
+          <label for="FirstName">First Name</label>
+          <input type="text" name="FirstName" required/>
+
+          <label for="FamilyName">Family Name</label>
+          <input type="text" name="FamilyName" required/>
+
+          <label for="Sex">Sex</label>
+          <input type="radio" name="sex" value="F" required />
+          <label for="Sex">F</label>
+          <input type="radio" name="sex" value="M" required />
+          <label for="Sex">M</label>
+        </fieldset>
+        <fieldset>
+          <legend>Contact Details</legend>
+          <label for="Telephone">Telephone</label>
+          <input type="tel" name="Telephone" required />
+          <label for="Hauptnummer">Hauptnummer</label>
+          <input type="tel" name="Hauptnummer" placeholder="optional" />
+          <label for="Fax">Fax</label>
+          <input type="tel" name="Fax" placeholder="optional" />
+        </fieldset>
+
+        <fieldset>
+          <legend>Address details</legend>
+          <label for="CompanyName">Company Name</label>
+          <input type="text" name="CompanyName" value="" required />
+          <label for="Zusatz2">Zusatz Firma</label>
+          <input type="text" name="Zusatz2" value="" placeholder="optional" />
+
+          <label for="Zusatz1">Zusatz Adresse</label>
+          <input type="text" name="Zusatz1" value="" placeholder="optional" />
+
+          <label for="Postfach">Postfach</label>
+          <input type="text" name="Postfach" value="" placeholder="optional" />
+
+          <label for="PLZ">PLZ / Ort</label>
+          <input type="text" name="PLZ" value="" required />
+
+          <label for="Kanton">Kanton / Land</label>
+          <input type="text" name="Kanton" value="" placeholder="optional" />
+          <button>Submit</button>
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>
