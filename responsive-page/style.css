@@ -1,0 +1,72 @@
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+
+}
+
+body {
+    display: grid;
+    grid-template-columns: 50px 50px;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "header header"
+        "content content"
+        "signup ."
+        "feature1 feature2"
+        "feature3 .";
+}
+
+header {
+    border: solid black;
+    background-color: #9933cc;
+    color: #ffffff;
+    padding: 15px;
+    grid-area: header;
+}
+
+article:nth-child(2) {
+    background: darkred;
+    border: solid black;
+    color: white;
+    padding: 15px;
+    grid-area: content;
+}
+
+article:nth-child(3) {
+    background: darkblue;
+    border: solid black;
+    color: white;
+    padding: 15px;
+    grid-area: signup;
+}
+
+article:nth-child(4) {
+    background: darkorchid;
+    border: solid black;
+    color: white;
+    padding: 15px;
+    grid-area: feature1;
+}
+
+article:nth-child(5) {
+    background: darkgreen;
+    border: solid black;
+    color: white;
+    padding: 15px;
+    grid-area: feature2;
+}
+
+article:nth-child(6) {
+    background: darkturquoise;
+    border: solid black;
+    color: white;
+    padding: 15px;
+    grid-area: feature3;
+}
