@@ -1,0 +1,6 @@
+1. Prompt for user to input their current age and the age they want to retire.
+2. Validate if the input is a positive number, show an error message if it's a negative number or a string.
+3. Prompt user to enter their desired retired age.
+4. Validate if the input is a positive number, show an error message if it's a negative number or a string.
+5. Calculate the age by subrtacting their retirement age and current age.
+6. Show how many years until retirement.
