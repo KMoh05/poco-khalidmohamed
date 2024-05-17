@@ -55,7 +55,7 @@ authors.forEach(function (author) {
 
   listItem.innerHTML = `
   <img src="img/tile_${author.firstName.toLowerCase()}_${author.lastName.toLowerCase()}.jpg"/>
-  <p>${author.firstName} ${author.lastName}</p>
+  <h2>${author.firstName} ${author.lastName}</h2>
 `;
 
   list.appendChild(listItem);
